@@ -1,5 +1,6 @@
 # DECK SAVER - Under construction
 ## Hearthstone®: Heroes of Warcraft™
+====================================
 
 ## Deck Saver is a web app using the public [Hearthstone API](http://hearthstoneapi.com/ "Hearthstone API") to save various constructed decks for each class.
 
@@ -25,7 +26,7 @@ This web app is my attempt to do away with the pencil and paper (or spreadsheet)
 * PostgreSQL
 * HTML5
 * CSS3
-* Foundation CSS framework
+* Foundation-Rails CSS framework from Zurb
 * Sass
 * Puma
 * Unirest for Ruby
