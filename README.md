@@ -28,7 +28,7 @@ As a user I wish to be able to share a saved deck on social media, and make them
 
 ## TODO
 
-* Get static pages up and running
+* ~~Get static pages up and running~~
 * Implement API
 * Implement login
 * Styling
