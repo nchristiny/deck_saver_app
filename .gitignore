@@ -1,3 +1,5 @@
+.env
+
 # Build ...
 node_modules
 npm-debug.log

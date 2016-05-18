@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from '../containers/home';
 
 var App = React.createClass({
   render: function () {
@@ -6,9 +7,11 @@ var App = React.createClass({
       this.props.onRender();
     }
     return (
-      <div>
-        <h1>Deck Saver</h1>
-        <p>Choose class!</p>
+      <div className='app'>
+        <p>Deck Saver</p>
+        <div className='home'>
+          <Home />
+        </div>
       </div>
     );
   },
