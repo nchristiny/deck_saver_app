@@ -1,12 +1,15 @@
 import React from 'react';
 
-var Component = React.createClass({
+var App = React.createClass({
   render: function () {
     if (this.props.onRender) {
       this.props.onRender();
     }
     return (
-      <p>Deck Saver</p>
+      <div>
+        <h1>Deck Saver</h1>
+        <p>Choose class!</p>
+      </div>
     );
   },
   propTypes: {
@@ -14,4 +17,4 @@ var Component = React.createClass({
   }
 });
 
-export default Component;
+export default App;
