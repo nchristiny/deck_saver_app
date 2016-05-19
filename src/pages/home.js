@@ -5,7 +5,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className='home'>
-        <p>Home Page</p>
+        <h2>Home Page</h2>
         <Cards />
       </div>
       );
