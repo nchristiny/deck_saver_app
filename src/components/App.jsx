@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '../containers/home';
+import Home from '../pages/home';
 
 var App = React.createClass({
   render: function () {
@@ -8,10 +8,8 @@ var App = React.createClass({
     }
     return (
       <div className='app'>
-        <p>Deck Saver</p>
-        <div className='home'>
+        <h1>Deck Saver</h1>
           <Home />
-        </div>
       </div>
     );
   },
