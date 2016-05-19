@@ -9,7 +9,9 @@ var App = React.createClass({
     return (
       <div className='app'>
         <h1>Deck Saver</h1>
+        <div className='home'>
           <Home />
+        </div>
       </div>
     );
   },
