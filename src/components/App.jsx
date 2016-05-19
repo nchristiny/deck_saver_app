@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-var App = React.createClass({
-  render: function () {
+export default class App extends Component {
+  render() {
     if (this.props.onRender) {
       this.props.onRender();
     }
@@ -11,11 +11,10 @@ var App = React.createClass({
         {this.props.children}
       </div>
     );
-  },
-  propTypes: {
-    onRender: React.PropTypes.func,
-    children: React.PropTypes.node
   }
-});
+}
 
-export default App;
+App.propTypes = {
+  onRender: React.PropTypes.func,
+  children: React.PropTypes.node
+};
