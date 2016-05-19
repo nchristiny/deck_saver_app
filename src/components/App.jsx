@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from '../pages/home';
 
 var App = React.createClass({
   render: function () {
@@ -9,14 +8,13 @@ var App = React.createClass({
     return (
       <div className='app'>
         <h1>Deck Saver</h1>
-        <div className='home'>
-          <Home />
-        </div>
+        {this.props.children}
       </div>
     );
   },
   propTypes: {
-    onRender: React.PropTypes.func
+    onRender: React.PropTypes.func,
+    children: React.PropTypes.node
   }
 });
 
