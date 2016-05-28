@@ -1,23 +1,20 @@
-import React from 'react';
-import Home from '../containers/home';
+import React, { Component } from 'react';
 
-var App = React.createClass({
-  render: function () {
+export default class App extends Component {
+  render() {
     if (this.props.onRender) {
       this.props.onRender();
     }
     return (
       <div className='app'>
-        <p>Deck Saver</p>
-        <div className='home'>
-          <Home />
-        </div>
+        <h1>Deck Saver</h1>
+        {this.props.children}
       </div>
     );
-  },
-  propTypes: {
-    onRender: React.PropTypes.func
   }
-});
+}
 
-export default App;
+App.propTypes = {
+  onRender: React.PropTypes.func,
+  children: React.PropTypes.node
+};
