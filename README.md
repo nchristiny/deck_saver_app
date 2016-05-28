@@ -2,6 +2,9 @@
 (under construction)
 ### By Nicholas Christiny  
 Deck Saver is a web app using the public [Hearthstone API](http://hearthstoneapi.com/ "Hearthstone API") to save various constructed decks for each class.
+
+Consumes [deck_saver_backend API](https://github.com/nchristiny/deck_saver_backend)
+
 ### Dependencies:
 	- npm
 	- React

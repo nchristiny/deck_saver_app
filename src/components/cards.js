@@ -4,7 +4,9 @@ export default class Cards extends Component {
   render() {
     return (
       <div className='cards'>
-        <p>[Card1,Card2,...]</p>
+        <ui>
+          <li>card data</li>
+        </ui>
       </div>
       );
   }
