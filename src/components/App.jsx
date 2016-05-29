@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Search from './search';
 
 export default class App extends Component {
   render() {
@@ -8,6 +9,7 @@ export default class App extends Component {
     return (
       <div className='app'>
         <h1>Deck Saver</h1>
+        <Search />
         {this.props.children}
       </div>
     );

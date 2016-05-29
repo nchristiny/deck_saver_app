@@ -4,9 +4,7 @@ export default class Card extends Component {
   render() {
     return (
       <div className='card'>
-        <ui>
-          <li>card data</li>
-        </ui>
+        <p>Title: </p>
       </div>
       );
   }
