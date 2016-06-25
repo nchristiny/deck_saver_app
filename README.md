@@ -13,7 +13,7 @@ Consumes [deck_saver_backend API](https://github.com/nchristiny/deck_saver_backe
 
 ```
 npm install
-npm run dev
+npm start
 ```
 
 ## License: MIT
