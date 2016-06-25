@@ -1,16 +1,32 @@
 {
+  "root": true,
   "ecmaFeatures": {
     "globalReturn": true,
     "jsx": true,
-    "modules": true
+    "modules": true,
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "destructuring": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "restParams": true,
+    "templateStrings": true
   },
-
   "env": {
     "browser": true,
     "es6": true,
     "node": true
   },
-
+  "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true
+      }
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "globals": {
     "document": false,
     "escape": false,
@@ -23,14 +39,21 @@
     "expect": true,
     "sinon": true
   },
-
   "parser": "babel-eslint",
-
   "plugins": [
-    "react"
+    "react",
+    "babel"
   ],
-
   "rules": {
+    "babel/generator-star-spacing": 1,
+    "babel/new-cap": 1,
+    "babel/array-bracket-spacing": 1,
+    "babel/object-curly-spacing": 1,
+    "babel/object-shorthand": 1,
+    "babel/arrow-parens": 1,
+    "babel/no-await-in-loop": 1,
+    "babel/flow-object-type": 1,
+    "babel/func-params-comma-dangle": 1,
     "block-scoped-var": 2,
     "brace-style": [2, "1tbs", { "allowSingleLine": true }],
     "camelcase": [2, { "properties": "always" }],
