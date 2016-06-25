@@ -1,74 +1,60 @@
 {
   "name": "deck-saver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Using the public Hearthstone API to save various constructed decks for each class.",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:nchristiny/deck_saver_app.git"
   },
+  "author": "Nicholas Christiny",
+  "license": "MIT",
   "keywords": [
     "hearthstone",
     "warcraft",
     "blizzard",
     "game"
   ],
-  "author": "Nicholas Christiny",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nchristiny/deck_saver_app/issues"
   },
   "scripts": {
-    "dev": "WEBPACK_ENV=dev ./node_modules/.bin/webpack --watch --inline",
-    "build": "WEBPACK_ENV=build ./node_modules/.bin/webpack",
-    "test": "karma start",
-    "test:ci": "watch 'npm run test' src/"
+    "lint": "eslint src || true",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "devDependencies": {
-    "babel": "6.5.2",
-    "babel-core": "6.6.5",
-    "babel-eslint": "5.0.0",
-    "babel-loader": "6.2.4",
-    "babel-preset-es2015": "6.6.0",
-    "babel-preset-react": "6.5.0",
-    "chai": "3.5.0",
-    "core-js": "1.1.4",
-    "eslint": "1.4.3",
-    "eslint-loader": "1.0.0",
-    "eslint-plugin-react": "3.4.1",
-    "karma": "0.13.19",
-    "karma-chai": "0.1.0",
-    "karma-chai-plugins": "0.6.0",
-    "karma-chai-sinon": "0.1.5",
-    "karma-chrome-launcher": "0.2.0",
-    "karma-mocha": "0.2.0",
-    "karma-mocha-reporter": "1.1.1",
-    "karma-phantomjs-launcher": "0.2.1",
-    "karma-sinon": "1.0.4",
-    "karma-sinon-chai": "1.1.0",
-    "karma-sourcemap-loader": "0.3.5",
-    "karma-webpack": "1.7.0",
+    "babel-core": "^6.2.1",
+    "babel-eslint": "^6.1.0",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "eslint": "^2.13.1",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-react": "^5.2.2",
+    "ghooks": "^1.2.4",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
-    "phantomjs": "^1.9.19",
-    "react": "0.14.7",
-    "react-addons-test-utils": "0.14.7",
-    "react-dom": "0.14.7",
-    "watch": "0.16.0",
-    "webpack": "1.12.9",
-    "webpack-dev-server": "1.14.0"
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
-    "axios": "^0.11.1",
-    "dotenv": "^2.0.0",
-    "ghooks": "^1.2.1",
-    "karma": "^0.13.19",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-redux": "^4.4.5",
-    "react-router": "^2.4.0",
-    "redux": "^3.5.2",
-    "redux-logger": "^2.6.1",
-    "redux-promise": "^0.5.3",
-    "redux-thunk": "^2.1.0"
+    "babel-preset-stage-1": "^6.1.18",
+    "lodash": "^3.10.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-redux": "^4.0.0",
+    "react-router": "^2.0.1",
+    "redux": "^3.0.4"
   }
 }

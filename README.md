@@ -10,13 +10,11 @@ Consumes [deck_saver_backend API](https://github.com/nchristiny/deck_saver_backe
 	- React
 	- backend database connection
 	- valid API key
-### Usage:
+
 ```
 npm install
-npm run dev
+npm start
 ```
-
-http://localhost:9000/
 
 ## License: MIT
 ### Hearthstone®: Heroes of Warcraft™
