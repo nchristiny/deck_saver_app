@@ -95,7 +95,7 @@
     "no-else-return": 2,
     "no-empty": 0,
     "no-empty-character-class": 2,
-    "no-empty-label": 2,
+    "no-empty-label": 1,
     "no-eq-null": 0,
     "no-eval": 2,
     "no-ex-assign": 2,
