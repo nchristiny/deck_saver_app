@@ -19,9 +19,15 @@
     "url": "https://github.com/nchristiny/deck_saver_app/issues"
   },
   "scripts": {
+    "lint": "eslint src || true",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "devDependencies": {
     "babel-core": "^6.2.1",
@@ -33,6 +39,7 @@
     "chai-jquery": "^2.0.0",
     "eslint": "^2.13.1",
     "eslint-plugin-babel": "^3.3.0",
+    "ghooks": "^1.2.4",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
