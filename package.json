@@ -1,6 +1,6 @@
 {
   "name": "deck-saver",
-  "version": "0.5",
+  "version": "0.0.2",
   "description": "Using the public Hearthstone API to save various constructed decks for each class.",
   "main": "lib/index.js",
   "repository": {
